@@ -27,7 +27,7 @@ jobs:
           if [ -f "./gradlew" ]; then
             ./gradlew assembleDebug
           else
-            gradle assembleDebug
+            ./gradlew assembleDebug
           fi
 
       - name: Rename APK
