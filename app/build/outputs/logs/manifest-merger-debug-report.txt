@@ -20,8 +20,9 @@ MERGED from [androidx.core:core:1.12.0] /home/debian/.gradle/caches/transforms-4
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.5.1] /home/debian/.gradle/caches/transforms-4/f72c06ef03c56c0ba2cef1cf3798b812/transformed/lifecycle-viewmodel-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/debian/.gradle/caches/transforms-4/967869a7caf523e5233553795953561c/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.12.0] /home/debian/.gradle/caches/transforms-4/c09329484dcd00e7a76f56b58cb46b39/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.savedstate:savedstate:1.2.0] /home/debian/.gradle/caches/transforms-4/31c4623d7bdc9c065518545f8556b4ad/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.6.1] /home/debian/.gradle/caches/transforms-4/2c70ee7d4533e6a33a8c470d14cbd416/transformed/room-runtime-2.6.1/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] /home/debian/.gradle/caches/transforms-4/ceb1e63de8edb2d8cefd837f29690262/transformed/room-ktx-2.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/debian/.gradle/caches/transforms-4/31c4623d7bdc9c065518545f8556b4ad/transformed/savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/debian/.gradle/caches/transforms-4/dbb104c628752715f3ad64c1c3731cac/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.sqlite:sqlite:2.4.0] /home/debian/.gradle/caches/transforms-4/d8936a55f666f1dfd0b57432e9116734/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /home/debian/.gradle/caches/transforms-4/4f6c470698b39c16d1e946a68206d4db/transformed/annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
@@ -128,10 +129,12 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/debi
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.5.1] /home/debian/.gradle/caches/transforms-4/967869a7caf523e5233553795953561c/transformed/lifecycle-viewmodel-savedstate-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core-ktx:1.12.0] /home/debian/.gradle/caches/transforms-4/c09329484dcd00e7a76f56b58cb46b39/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.12.0] /home/debian/.gradle/caches/transforms-4/c09329484dcd00e7a76f56b58cb46b39/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.0] /home/debian/.gradle/caches/transforms-4/31c4623d7bdc9c065518545f8556b4ad/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.2.0] /home/debian/.gradle/caches/transforms-4/31c4623d7bdc9c065518545f8556b4ad/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.room:room-runtime:2.6.1] /home/debian/.gradle/caches/transforms-4/2c70ee7d4533e6a33a8c470d14cbd416/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
 MERGED from [androidx.room:room-runtime:2.6.1] /home/debian/.gradle/caches/transforms-4/2c70ee7d4533e6a33a8c470d14cbd416/transformed/room-runtime-2.6.1/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/debian/.gradle/caches/transforms-4/ceb1e63de8edb2d8cefd837f29690262/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] /home/debian/.gradle/caches/transforms-4/ceb1e63de8edb2d8cefd837f29690262/transformed/room-ktx-2.6.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/debian/.gradle/caches/transforms-4/31c4623d7bdc9c065518545f8556b4ad/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.2.0] /home/debian/.gradle/caches/transforms-4/31c4623d7bdc9c065518545f8556b4ad/transformed/savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/debian/.gradle/caches/transforms-4/dbb104c628752715f3ad64c1c3731cac/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /home/debian/.gradle/caches/transforms-4/dbb104c628752715f3ad64c1c3731cac/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.sqlite:sqlite:2.4.0] /home/debian/.gradle/caches/transforms-4/d8936a55f666f1dfd0b57432e9116734/transformed/sqlite-2.4.0/AndroidManifest.xml:20:5-44

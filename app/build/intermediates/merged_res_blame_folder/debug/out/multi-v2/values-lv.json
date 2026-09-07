@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.expensetracker.app-mergeDebugResources-22:/values-lv/values-lv.xml",
+            "outputFile": "com.expensetracker.app-mergeDebugResources-23:/values-lv/values-lv.xml",
             "map": [
                 {
                     "source": "/home/debian/.gradle/caches/transforms-4/04b980f1254cb7db2dd2d6314bcaaa48/transformed/appcompat-1.6.1/res/values-lv/values-lv.xml",
