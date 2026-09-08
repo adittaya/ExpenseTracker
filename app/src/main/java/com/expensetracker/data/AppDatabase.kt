@@ -7,9 +7,23 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-@Database(entities = [Expense::class], version = 2, exportSchema = false)
+@Database(
+    entities = [
+        Expense::class, 
+        Budget::class, 
+        Account::class, 
+        Goal::class, 
+        Debt::class
+    ], 
+    version = 3, 
+    exportSchema = false
+)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun dao(): ExpenseDao
+    abstract fun expenseDao(): ExpenseDao
+    abstract fun budgetDao(): BudgetDao
+    abstract fun accountDao(): AccountDao
+    abstract fun goalDao(): GoalDao
+    abstract fun debtDao(): DebtDao
 
     companion object {
         @Volatile private var INSTANCE: AppDatabase? = null
@@ -25,7 +39,7 @@ abstract class AppDatabase : RoomDatabase() {
                     override fun onCreate(db: SupportSQLiteDatabase) {
                         super.onCreate(db)
                         CoroutineScope(Dispatchers.IO).launch {
-                            // Pre-populate with sample categories if needed
+                            // Pre-populate with default data if needed
                         }
                     }
                 })
