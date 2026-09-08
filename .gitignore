@@ -1,1 +1,3 @@
-Nothing needs to be added to the .gitignore file based on the provided changes. The listed files (BUILD_APK_GUIDE.md, .github/workflows/android.yml, README.md) are all source/config files that should not be ignored.
+```
+.gradle/
+```
