@@ -2,9 +2,9 @@ name: Build APK
 
 on:
   push:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "qwen-code-b303dcfe-1e65-49ef-8b17-94cf4241dbce" ]
   pull_request:
-    branches: [ "main", "master" ]
+    branches: [ "main", "master", "qwen-code-b303dcfe-1e65-49ef-8b17-94cf4241dbce" ]
   workflow_dispatch:
 
 jobs:
