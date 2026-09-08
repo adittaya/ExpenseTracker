@@ -117,16 +117,58 @@ object DateUtils {
             "LAST_MONTH" -> {
                 val calendar = Calendar.getInstance()
                 calendar.add(Calendar.MONTH, -1)
-                getStartOfMonth(calendar.timeInMillis) to getEndOfMonth(calendar.timeInMillis)
+                getStartOfMonth(calendar) to getEndOfMonth(calendar)
             }
             "THIS_YEAR" -> getStartOfYear() to getEndOfYear()
             "LAST_YEAR" -> {
                 val calendar = Calendar.getInstance()
                 calendar.add(Calendar.YEAR, -1)
-                getStartOfYear(calendar.timeInMillis) to getEndOfYear(calendar.timeInMillis)
+                getStartOfYear(calendar) to getEndOfYear(calendar)
             }
             else -> getStartOfMonth() to getEndOfMonth()
         }
+    }
+
+    private fun getStartOfMonth(calendar: Calendar): Long {
+        val cal = calendar.clone() as Calendar
+        cal.set(Calendar.DAY_OF_MONTH, 1)
+        cal.set(Calendar.HOUR_OF_DAY, 0)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+        cal.set(Calendar.MILLISECOND, 0)
+        return cal.timeInMillis
+    }
+
+    private fun getEndOfMonth(calendar: Calendar): Long {
+        val cal = calendar.clone() as Calendar
+        cal.set(Calendar.DAY_OF_MONTH, cal.getActualMaximum(Calendar.DAY_OF_MONTH))
+        cal.set(Calendar.HOUR_OF_DAY, 23)
+        cal.set(Calendar.MINUTE, 59)
+        cal.set(Calendar.SECOND, 59)
+        cal.set(Calendar.MILLISECOND, 999)
+        return cal.timeInMillis
+    }
+
+    private fun getStartOfYear(calendar: Calendar): Long {
+        val cal = calendar.clone() as Calendar
+        cal.set(Calendar.MONTH, Calendar.JANUARY)
+        cal.set(Calendar.DAY_OF_MONTH, 1)
+        cal.set(Calendar.HOUR_OF_DAY, 0)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+        cal.set(Calendar.MILLISECOND, 0)
+        return cal.timeInMillis
+    }
+
+    private fun getEndOfYear(calendar: Calendar): Long {
+        val cal = calendar.clone() as Calendar
+        cal.set(Calendar.MONTH, Calendar.DECEMBER)
+        cal.set(Calendar.DAY_OF_MONTH, 31)
+        cal.set(Calendar.HOUR_OF_DAY, 23)
+        cal.set(Calendar.MINUTE, 59)
+        cal.set(Calendar.SECOND, 59)
+        cal.set(Calendar.MILLISECOND, 999)
+        return cal.timeInMillis
     }
 
     fun isToday(timestamp: Long): Boolean {
