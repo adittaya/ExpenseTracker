@@ -2,41 +2,65 @@ name: Build APK
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    env:
+      GRADLE_OPTS: "-Dorg.gradle.jvmargs=-Xmx4g -Dorg.gradle.daemon=false -Dkotlin.incremental=false"
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup JDK 17
+      - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
+          cache: 'gradle'
 
-      - name: Grant permission
-        run: chmod +x gradlew || true
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
 
-      - name: Build APK
+      - name: Validate Gradle Wrapper
+        uses: gradle/wrapper-validation-action@v2
+
+      - name: Build Debug APK
+        run: ./gradlew assembleDebug --stacktrace --no-daemon
+
+      - name: Verify APK exists
         run: |
-          if [ -f "./gradlew" ]; then
-            ./gradlew assembleDebug
-          else
-            ./gradlew assembleDebug
+          ls -la app/build/outputs/apk/debug/
+          if [ ! -f "app/build/outputs/apk/debug/app-debug.apk" ]; then
+            echo "APK not found!"
+            exit 1
           fi
 
-      - name: Rename APK
+      - name: Prepare Release Artifacts
         run: |
-          mkdir -p output
-          cp app/build/outputs/apk/debug/app-debug.apk output/ExpenseTracker.apk
+          mkdir -p release
+          cp app/build/outputs/apk/debug/app-debug.apk release/ExpenseTracker-v1.0-debug.apk
+          
+          # Create a simple checksum
+          sha256sum release/ExpenseTracker-v1.0-debug.apk > release/checksums.txt
 
-      - name: Upload APK
+      - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         with:
-          name: ExpenseTracker-APK
-          path: output/ExpenseTracker.apk
+          name: ExpenseTracker-Debug-APK
+          path: release/ExpenseTracker-v1.0-debug.apk
+          retention-days: 30
+          if-no-files-found: error
+
+      - name: Upload Checksums
+        uses: actions/upload-artifact@v4
+        with:
+          name: Checksums
+          path: release/checksums.txt
+          retention-days: 30
