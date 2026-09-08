@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Expense Tracker</string>
+    
+    <!-- Main Screen -->
+    <string name="dashboard">Dashboard</string>
+    <string name="total_expenses">Total Expenses</string>
+    <string name="this_month">This Month</string>
+    <string name="expense_overview">Expense Overview</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="view_all">View All</string>
+    <string name="search_expenses">Search expenses…</string>
+    <string name="no_expenses_yet">No expenses yet</string>
+    <string name="tap_to_add_first">Tap + to add your first expense</string>
+    
+    <!-- Add/Edit Expense Screen -->
+    <string name="add_expense">Add Expense</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="track_your_spending">Track your spending</string>
+    <string name="amount">Amount</string>
+    <string name="category">Category</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="date">Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="note">Note</string>
+    <string name="add_a_note">Add a note</string>
+    <string name="optional_note">Optional note</string>
+    <string name="recurring_expense">Recurring Expense</string>
+    <string name="recurring_type">Recurring Type</string>
+    <string name="tags">Tags</string>
+    <string name="add_tags_optional">Add tags (optional)</string>
+    <string name="comma_separated_tags">Comma separated tags</string>
+    <string name="save_expense">Save Expense</string>
+    <string name="cancel">Cancel</string>
+    
+    <!-- Categories -->
+    <string name="category_food_dining">Food &amp; Dining</string>
+    <string name="category_transportation">Transportation</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_bills_utilities">Bills &amp; Utilities</string>
+    <string name="category_healthcare">Healthcare</string>
+    <string name="category_education">Education</string>
+    <string name="category_personal_care">Personal Care</string>
+    <string name="category_home_garden">Home &amp; Garden</string>
+    <string name="category_insurance">Insurance</string>
+    <string name="category_savings">Savings</string>
+    <string name="category_investments">Investments</string>
+    <string name="category_gifts_donations">Gifts &amp; Donations</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_pets">Pets</string>
+    <string name="category_sports_fitness">Sports &amp; Fitness</string>
+    <string name="category_subscriptions">Subscriptions</string>
+    <string name="category_other">Other</string>
+    
+    <!-- Payment Methods -->
+    <string name="payment_cash">Cash</string>
+    <string name="payment_credit_card">Credit Card</string>
+    <string name="payment_debit_card">Debit Card</string>
+    <string name="payment_bank_transfer">Bank Transfer</string>
+    <string name="payment_upi">UPI</string>
+    <string name="payment_wallet">Wallet</string>
+    <string name="payment_net_banking">Net Banking</string>
+    <string name="payment_emi">EMI</string>
+    <string name="payment_other">Other</string>
+    
+    <!-- Recurring Types -->
+    <string name="recurring_one_time">One-time</string>
+    <string name="recurring_daily">Daily</string>
+    <string name="recurring_weekly">Weekly</string>
+    <string name="recurring_bi_weekly">Bi-weekly</string>
+    <string name="recurring_monthly">Monthly</string>
+    <string name="recurring_quarterly">Quarterly</string>
+    <string name="recurring_yearly">Yearly</string>
+    
+    <!-- Period Filters -->
+    <string name="period_today">Today</string>
+    <string name="period_yesterday">Yesterday</string>
+    <string name="period_this_week">This Week</string>
+    <string name="period_last_week">Last Week</string>
+    <string name="period_this_month">This Month</string>
+    <string name="period_last_month">Last Month</string>
+    <string name="period_this_year">This Year</string>
+    
+    <!-- Actions -->
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="action_add">Add</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_sort">Sort</string>
+    
+    <!-- Messages -->
+    <string name="expense_added_success">Expense added successfully</string>
+    <string name="expense_updated_success">Expense updated successfully</string>
+    <string name="expense_deleted">Expense deleted</string>
+    <string name="error_loading_expenses">Error loading expenses</string>
+    <string name="error_saving_expense">Error saving expense</string>
+    <string name="error_deleting_expense">Error deleting expense</string>
+    <string name="amount_required">Amount is required</string>
+    <string name="enter_valid_amount">Enter a valid amount</string>
+    
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="currency">Currency</string>
+    <string name="theme">Theme</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="app_lock">App Lock</string>
+    <string name="biometric_auth">Biometric Authentication</string>
+    <string name="start_of_week">Start of Week</string>
+    <string name="budget_settings">Budget Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="data_export">Export Data</string>
+    <string name="data_import">Import Data</string>
+    <string name="about">About</string>
+    
+    <!-- Content Descriptions -->
+    <string name="cd_category_icon">Category icon</string>
+    <string name="cd_expense_item">Expense item</string>
+    <string name="cd_add_expense">Add expense</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_calendar">Calendar</string>
+    <string name="cd_chart">Expense chart</string>
+    <string name="cd_edit">Edit expense</string>
+    <string name="cd_delete">Delete expense</string>
+</resources>

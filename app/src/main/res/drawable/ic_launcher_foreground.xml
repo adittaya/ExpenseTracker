@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Dollar/Wallet Symbol -->
+    <group android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:translateX="27"
+        android:translateY="27">
+        
+        <!-- Circle background -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+        
+        <!-- Dollar sign -->
+        <path
+            android:fillColor="#4CAF50"
+            android:pathData="M54,30c-8.8,0-16,7.2-16,16v4H34v8h4v8c0,8.8,7.2,16,16,16s16-7.2,16-16v-4h4v-8h-4V46C70,37.2,62.8,30,54,30z M54,66c-4.4,0-8-3.6-8-8v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8C62,62.4,58.4,66,54,66z"/>
+    </group>
+</vector>

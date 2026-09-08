@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Standard spacing -->
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+    
+    <!-- Card dimensions -->
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+    <dimen name="card_padding">16dp</dimen>
+    
+    <!-- Text sizes -->
+    <dimen name="text_size_xs">12sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xl">24sp</dimen>
+    <dimen name="text_size_title">28sp</dimen>
+    
+    <!-- Button dimensions -->
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="button_corner_radius">8dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    
+    <!-- FAB -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    
+    <!-- Input fields -->
+    <dimen name="input_height">56dp</dimen>
+    <dimen name="input_corner_radius">8dp</dimen>
+    <dimen name="input_padding">16dp</dimen>
+    
+    <!-- Icon sizes -->
+    <dimen name="icon_size_small">24dp</dimen>
+    <dimen name="icon_size_medium">40dp</dimen>
+    <dimen name="icon_size_large">48dp</dimen>
+    
+    <!-- Chart -->
+    <dimen name="chart_height">250dp</dimen>
+    <dimen name="chart_hole_radius">40dp</dimen>
+    
+    <!-- Empty state -->
+    <dimen name="empty_state_icon_size">120dp</dimen>
+    
+    <!-- Category indicator -->
+    <dimen name="category_indicator_width">8dp</dimen>
+    <dimen name="category_indicator_radius">12dp</dimen>
+    
+    <!-- Chip -->
+    <dimen name="chip_height">36dp</dimen>
+    <dimen name="chip_corner_radius">20dp</dimen>
+    <dimen name="chip_text_size">13sp</dimen>
+    
+    <!-- Payment method chip -->
+    <dimen name="payment_chip_padding_start">8dp</dimen>
+    <dimen name="payment_chip_padding_end">8dp</dimen>
+    <dimen name="payment_chip_padding_top">2dp</dimen>
+    <dimen name="payment_chip_padding_bottom">2dp</dimen>
+    <dimen name="payment_chip_radius">12dp</dimen>
+</resources>
